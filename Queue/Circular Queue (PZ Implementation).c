@@ -52,6 +52,18 @@ int deQueue() {
     return (element);
   }
 }
+/*another dequeue
+int dequeue(linklist *front) {
+    if (*front == NULL) {
+        return -1; // Return -1 if the queue is empty
+    }
+    linklist temp = *front; // Store the front node in a temporary variable
+    int value = temp->data; // Get the data from the front node
+    *front = (*front)->next; // Move front to the next node
+    free(temp); // Free the memory of the dequeued node
+    return value; // Return the dequeued value
+}
+*/
 
 // display the queue
 void display() {
